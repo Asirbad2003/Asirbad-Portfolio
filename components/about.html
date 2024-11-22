@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Asirbad Pradhan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>AP</span>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <h1>About Me</h1>
+            <div style="margin-top: 2rem;">
+                <h2 style="color: var(--accent-color); margin-bottom: 1rem;">Background</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    I'm currently pursuing my Master of Computer Applications (MCA) at GIET University, 
+                    where I'm honing my skills in modern software development. My passion lies in creating 
+                    innovative web solutions using the MERN stack and exploring new technologies.
+                </p>
+
+                <h2 style="color: var(--accent-color); margin-bottom: 1rem;">Technical Expertise</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Programming Languages</h3>
+                        <ul style="list-style: none;">
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Web Technologies</h3>
+                        <ul style="list-style: none;">
+                            <li><i class="fab fa-react"></i> React.js</li>
+                            <li><i class="fab fa-node"></i> Node.js</li>
+                            <li><i class="fas fa-database"></i> MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 style="color: var(--accent-color); margin-bottom: 1rem;">Professional Goals</h2>
+                <p style="margin-bottom: 1.5rem;">
+                    As an aspiring full-stack developer, I'm focused on building scalable web applications 
+                    and contributing to innovative projects. I'm particularly interested in:
+                </p>
+                <ul style="list-style: none; margin-bottom: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"></i> Building responsive and user-friendly web applications</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"></i> Developing RESTful APIs and microservices</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"></i> Database design and optimization</li>
+                    <li><i class="fas fa-check"></i> Learning new technologies and best practices</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../assets/images/profile.jpg" alt="Asirbad Pradhan" class="profile-img">
+            <div style="margin-top: 2rem; text-align: center;">
+                <!-- <div class="social-links">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot">
+        <div class="chat-icon" onclick="toggleChat()">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="../assets/images/chatbot-avatar.png" alt="Chatbot Avatar">
+                <span>Let's Connect!</span>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <div class="chat-input-box">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Asirbad Pradhan. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

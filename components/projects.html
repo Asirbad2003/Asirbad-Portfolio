@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Asirbad Pradhan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>AP</span>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="projects">
+        <div class="hero-content" style="max-width: 1000px;">
+            <h1>My Projects</h1>
+            
+            <!-- Project 1 -->
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Real-Time Chat Application</h2>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">React</span>
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Node.js</span>
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Socket.io</span>
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    A dynamic real-time chat application that enables instant messaging between users. Built with modern web technologies 
+                    to provide seamless communication experience.
+                </p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/Asirbad2003/Real-Time-Chat.git" target="_blank" 
+                       style="background: var(--primary-color); color: white; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Place Finder App</h2>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">React</span>
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Maps API</span>
+                    <span style="background: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">Netlify</span>
+                </div>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    An intuitive location discovery application that helps users find places of interest. Features include 
+                    interactive maps, search functionality, and detailed place information.
+                </p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://placefinderapp.netlify.app/" target="_blank" 
+                       style="background: var(--secondary-color); color: white; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/Asirbad2003/place-finder-app.git" target="_blank" 
+                       style="background: var(--primary-color); color: white; padding: 0.8rem 1.5rem; border-radius: 10px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot">
+        <div class="chat-icon" onclick="toggleChat()">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="../assets/images/chatbot-avatar.png" alt="Chatbot Avatar">
+                <span>Let's Connect!</span>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <div class="chat-input-box">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Asirbad Pradhan. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Asirbad Pradhan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>AP</span>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="experience">
+        <div class="hero-content" style="max-width: 800px;">
+            <h1>Professional Experience</h1>
+            
+            <!-- Current Position -->
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="color: var(--primary-color);">Office Administrator</h2>
+                    <span style="color: var(--accent-color);">Oct 2024 - Present</span>
+                </div>
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Distil Education Private Limited</h3>
+                <p style="line-height: 1.8;">Currently serving as an Office Administrator, managing day-to-day operations and ensuring smooth organizational workflow.</p>
+            </div>
+
+            <!-- Past Experiences -->
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="color: var(--primary-color);">Business Development Executive</h2>
+                    <span style="color: var(--accent-color);">Sep 2024 - Oct 2024</span>
+                </div>
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Edu-versity</h3>
+                <p style="line-height: 1.8;">Worked on business development initiatives and client relationship management.</p>
+            </div>
+
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="color: var(--primary-color);">Web Developer Intern</h2>
+                    <span style="color: var(--accent-color);">April 2024 - May 2024</span>
+                </div>
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Topper World</h3>
+                <p style="line-height: 1.8;">Contributed to web development projects, implementing responsive designs and modern web technologies.</p>
+            </div>
+
+            <div style="background: var(--card-bg); padding: 2rem; border-radius: 20px; margin: 2rem 0; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="color: var(--primary-color);">Administrator</h2>
+                    <span style="color: var(--accent-color);">Nov 2023 - Jan 2024</span>
+                </div>
+                <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">Salesforce</h3>
+                <p style="line-height: 1.8;">Managed administrative tasks and system configurations in the Salesforce environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot">
+        <div class="chat-icon" onclick="toggleChat()">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="../assets/images/chatbot-avatar.png" alt="Chatbot Avatar">
+                <span>Let's Connect!</span>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <div class="chat-input-box">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Asirbad Pradhan. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

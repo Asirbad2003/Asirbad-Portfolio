@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asirbad Pradhan - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>AP</span>
+            </a>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./components/about.html">About</a>
+                <a href="./components/experience.html">Experience</a>
+                <a href="./components/projects.html">Projects</a>
+                <a href="./components/skills.html">Skills</a>
+                <a href="./components/contact.html">Contact</a>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Asirbad Pradhan</h1>
+            <span class="typed-text"></span>
+            <p>Master of Computer Applications student at GIET University, passionate about creating innovative solutions and learning new technologies.</p>
+            <div class="social-links">
+                <a href="https://github.com/Asirbad2003" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/asirbad-pradhan/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpradhan_as5640" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:23mca061.asirbadpradhan@giet.edu" title="Email"><i class="fas fa-envelope"></i></a>
+
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Asirbad Pradhan" class="profile-img">
+        </div>
+    </section>
+
+
+    <div class="chatbot">
+        <div class="chat-icon" onclick="toggleChat()">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img src="assets/images/chatbot-avatar.png" alt="Chatbot Avatar">
+                <span>Let's Connect!</span>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <div class="chat-input-box">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+                    <button class="send-btn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Asirbad Pradhan. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
